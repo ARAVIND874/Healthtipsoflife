@@ -519,7 +519,7 @@ Please provide a response in ${currentLang === 'ta' ? 'Tamil' : 'English'}. Form
             chatHistory.push({ role: "user", parts: [{ text: finalPrompt }] });
             const payload = { contents: chatHistory };
 
-            const apiKey = "AIzaSyBS-EoflWgiHT7Yx13kp0W7GJBZ1qsrcDw";
+            const apiKey = "AIzaSyDTM7mMLeB10hlz6OdVhlgSrMf8U9LpDII";
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
             const response = await fetch(apiUrl, {
                 method: 'POST',
